@@ -1,3 +1,14 @@
 * {box-sizing: border-box;}
 html, body {padding: 0; margin: 0;}
-body {background-color: lightslategray;}
+body {background-color: lightslategray; padding: 20px;}
+
+.pag-container {text-align: center;}
+.pag {display: inline; padding: 2px; margin: 0;}
+.pag li {display: inline-block; list-style-type: none;}
+.pag a {text-decoration: none; color: navy; font-size: 20px; transition-duration: 0.5s; padding: 4px;}
+.pag li:last-child > a {border-right: none;}
+.pag a:hover {background: rgb(73, 70, 66); color: orangered;}
+.active {background: rgb(125, 128, 125);}
+
+h1 {color: rgb(46, 24, 3); text-align: center; text-decoration: wavy; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+p {font-size: 2.7ex;}
