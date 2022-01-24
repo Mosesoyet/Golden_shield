@@ -12,3 +12,9 @@ body {background-color: lightslategray; padding: 20px;}
 
 h1 {color: rgb(46, 24, 3); text-align: center; text-decoration: wavy; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 p {font-size: 2.7ex; color: rgb(10, 1, 31);}
+
+main, body {display: flex;}
+body {flex-direction: column;}
+main {flex-direction: row; overflow-y: auto;}
+main > article {flex: 2; padding: 10px;}
+main > aside {flex: 0.5;}
