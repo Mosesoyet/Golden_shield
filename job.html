@@ -4,36 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Shield job</title>
-    <link href="golden.css" rel='stylesheet' type='text/css'>
+    <title>golden shield security service ltd South Sudan</title>
+    <link rel="stylesheet" type="text/css" href="golden.css">
+    <link rel="stylesheet" type="text/css" href="small_screen.css">
 </head>
 <body>
-    <header>
-        <div class="pag-container">
-            <div class="pag">
-                <ul>
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li class="active"><a href="job.html">Work with us</a></li>
-                    <li><a href="client.html">Clients</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
+    <!--header-->
+    <header class="header">
+        <!--The header should have a title for the website and links-->
+        <div class="burger">
+            <div class="lay1"></div>
+            <div class="lay2"></div>
+            <div class="lay3"></div>
         </div>
+       
+        <div class="logo">
+            <span class="logo-text">
+                <span class="title">GOLDEN SHIELD SECURITY SERVICE LTD</span><br />
+                <span class="motto"><i>Service With Integrity & Professionalism</i></span>
+            </span>
+        </div>
+        <div class="menubar">
+            <ul class="menu-list">
+                <li class="item"><a class="active" href="#">HOME</a></li>|
+                <li class="item"><a href="job.html">CARRIER / JOB</a></li>|
+                <li class="item"><a href="services.html">SERVICES</a></li>|
+                <li class="item"><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="my_div"></div>
     </header>
+
+    <!--main-->
     <main>
+         <!--aside-->
+
+    <!--article-->
         <article>
-            <h1>WELCOME TO OUR JOB SITE</h1>
-            <p>Find the latest opportunities with us today, here you'll get all the latest jobs available and the detailed informations about them.</p>
-            <p>You can either fill our application form or visit our head office in <b>Hai Kuwait</b> with the hard copy of your application form, CV and other required documents</p>
-            <p><b>NOTE:</b> All our jobs are as required by the <b>Ministry of Labour</b>, we therefore offer an equal opportunity for both male and female</p>
+            <section class="intro">
+                <div class="page-title">
+                    <span class="heading">
+                        <span class="h-up">WELCOME TO <span style="color: rgb(5, 93, 93);">GOLDEN SHIELD SECURITY SERVICE LTD</span></span><br />
+                        <span class="h-d">SOUTH SUDAN OFFICIAL WEBSITE</span>
+                    </span>
+                </div>
+                <p><span style="font-weight: bold; color: rgb(5, 93, 93);">Golden Shield Security Service Ltd</span>
+                    is duly registered and locally owned, private, fastest growing integrated security service provider in South Sudan.</p>
+                    <p>We provide quality services second to none in the security industry</p>
+            </section>
+            <section class="about">
+
+            </section>
         </article>
-        <aside>
-            <div>
-                <p>Security guards needed</p>
-            </div>
-        </aside>
+    <!--section-->
+
+    <!--aside-->
+    <aside>
+
+    </aside>
     </main>
-    
+    <!--footer-->
+    <div class="side-menubar">
+        <div class="close-menu">
+            <span>X</span>
+        </div>
+        <ul class="side-menu-items">
+            <li class="menu-item"><a class="active" href="#">HOME</a></li>
+            <li class="menu-item"><a href="#">CARRIER / JOB</a></li>
+            <li class="menu-item"><a href="#">OUR SERVICES</a></li>
+            <li class="menu-item"><a href="#">ABOUT US</a></li>
+        </ul>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger')
+        const sideMenu = document.querySelector('.side-menubar')
+        const closeMenu = document.querySelector('.close-menu')
+
+        burger.addEventListener('click', () => {
+            sideMenu.style.transform = 'translate(0%)'
+        })
+        closeMenu.addEventListener('click', () => {
+            sideMenu.style.transform = 'translate(-100%)'
+        })
+    </script>
+    <footer>
+        <div class="footer-text">
+            <span class="txt">
+                <span>GOLDEN SHIELD SECURITY SERVICE LTD SOUTH SUDAN</span>
+                <span style="color: rgb(0, 0, 8);">&copy; 2022</span>
+            </span>
+        </div>
+        <div class="mail">
+            <ul class="contact">
+                <li class="con"><a href="tel:+211921051116">Call Us</a></li>
+                <li class="con"><a href="tel:+211924864401">Call Our Customer Service</a></li>
+                <li class="con"><a href="mailto:goldensouthsudan@gmail.com">Send Us Mail</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
