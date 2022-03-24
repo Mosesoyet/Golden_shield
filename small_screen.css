@@ -5,7 +5,7 @@
         display: none;
     }
     p {
-        font-size: 1.05em;
+        font-size: 1.1em;
     }
     main aside{
         display: none;
@@ -81,16 +81,30 @@
         margin-left: 0;
     }
     .info-gsss h1{
-        text-align: center;
-        margin: 0;
+        
+        margin-left: 10px;
+        font-size: 1.2em;
     }
     .info-gsss h2 {
         margin-left: 10px;
+        font-size: 1.1em;
     }
     .key-management h1{
-        text-align: center;
+        margin-left: 10px;
+        font-size: 1.2em;
     }
     .key-management h3{
         margin-left: 10px;
+        font-size: 1.2em;
+    }
+    .tit {
+        font-size: 1.1em;
+    }
+    .div1 ul li{
+        font-size: 1.1em;
+    }
+    .why-gsss h2 {
+        margin-left: 15px;
+        font-size: 1.4em;
     }
 }
