@@ -26,6 +26,8 @@
     .motto {
         font-size: 0.8em;
     }
+    /*Designing home page */
+   
     .side-menubar {
         display: block;
         position: fixed;
@@ -110,6 +112,7 @@
         margin-left: 15px;
         font-size: 1.4em;
     }
+    /*designing services*/
     .services {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -117,9 +120,17 @@
     }
     .div-item_1, .div-item_2, .div-item_3, .div-item_4, .div-item_5 {
         width: 90%;
-        transition: 0.3s linear;
+        height: auto;
+    }
+    .div-item_1:hover, .div-item_2:hover, .div-item_3:hover, .div-item_4:hover, .div-item_5:hover{
+        width: 91%;
+        height: auto;
     }
     .img {
         height: calc(100vh - 60vh);
     }
+}
+
+@media screen and(max-width: 480px) {
+
 }

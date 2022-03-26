@@ -109,6 +109,7 @@ ul li{
     display: none;
     width: 38px;
     height: 28px;
+    cursor: pointer;
 }
 .lay1, .lay2, .lay3 {
     background: black;
@@ -118,11 +119,7 @@ ul li{
     border-radius: 10px;
     margin-left: 10px;
 }
-.intro {
-    width: 100%;
-    height: calc(100vh - 10vh);
-    background: rgb(227, 227, 228);
-}
+
 .page-title {
     display: flex;
     flex-direction: column;
@@ -152,51 +149,15 @@ ul li{
     font-size: 0.9em;
     font-weight: bolder;
 }
+/* Designing home page / index.html*/
 
 
+/* End home page design*/
 .side-menubar {
     display: none;
 }
 
-/*Designing the footer*/
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    background: rgb(211, 155, 130);
-    border-radius: 1px;
-    border-top: 1px outset;
-    margin-top: 20px;
-}
-.mail {
-    margin-left: 8.5em;
-    width: 45%;
-    height: auto;
-}
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-.con a{
-    color: rgb(6, 53, 53);
-    font-size: 1.1em;
-    margin-left: 20px;
-    font-weight: bold;
-}
-.contact:first-child{
-    margin-left: 0;
-}
-.txt {
-    font-size: 1em;
-    color: rgb(5, 93, 93);
-    font-weight: bolder;
-}
+
 /*Design for about.html*/
 .about {
     width: 100%;
@@ -334,12 +295,7 @@ footer {
     border: none;
     border-radius: 10px;
 }
-.div-item_1 {
-    background: rgb(63, 63, 250);
-}
-.div-item_2 {
-    background: green;
-}
+
 .ser_1, .ser_2, .ser_4, .ser_5 {
     display: none;
     position: fixed;
@@ -383,6 +339,7 @@ footer {
     width: 100%;
     height: auto;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 .div1 ul{
     margin-left: 10px;
@@ -426,5 +383,45 @@ footer {
     cursor: pointer;
     color: yellow;
     font-size: 2em;
+    font-weight: bolder;
+}
+
+/*Designing the footer*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background: rgb(211, 155, 130);
+    border-radius: 1px;
+    border-top: 1px outset;
+    margin-top: 20px;
+}
+.mail {
+    margin-left: 8.5em;
+    width: 45%;
+    height: auto;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.con a{
+    color: rgb(6, 53, 53);
+    font-size: 1.1em;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.contact:first-child{
+    margin-left: 0;
+}
+.txt {
+    font-size: 1em;
+    color: rgb(5, 93, 93);
     font-weight: bolder;
 }
