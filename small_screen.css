@@ -4,6 +4,9 @@
     .menubar {
         display: none;
     }
+    .header {
+        height: 15vh;
+    }
     p {
         font-size: 1.1em;
     }
@@ -106,5 +109,17 @@
     .why-gsss h2 {
         margin-left: 15px;
         font-size: 1.4em;
+    }
+    .services {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .div-item_1, .div-item_2, .div-item_3, .div-item_4, .div-item_5 {
+        width: 90%;
+        transition: 0.3s linear;
+    }
+    .img {
+        height: calc(100vh - 60vh);
     }
 }

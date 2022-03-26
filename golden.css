@@ -49,7 +49,7 @@ ul li{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 10vh;
+    height: 20vh;
     background: rgb(218, 200, 191);
     border: thin inset;
 }
@@ -287,18 +287,102 @@ footer {
 /*Designing services.html*/
 .services {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.services h2{
-    margin-left: 50px;
-    color: rgb(5, 93, 93);
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
 .services h3{
     margin-left: 10px;
     color: rgb(3, 73, 73);
     margin: 5px 10px;
+    text-align: center;
+}
+.div-item_1, .div-item_2, .div-item_4, .div-item_5 {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: inset;
+    border-radius: 4px;
+}
+.div-item_3 {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: inset;
+    border-radius: 4px;
+    background: rgb(70, 69, 69);
+}
+.div-item_3 h3{
+    color: yellow;
+}
+.ser_3 ul li{
+    padding: 1.5px;
+    color: white;
+    font-size: 1.1em;
+}
+
+.div-item_1:hover, .div-item_2:hover, .div-item_3:hover, .div-item_4:hover, .div-item_5:hover {
+    width: 410px;
+    height: 210px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 10px;
+}
+.div-item_1 {
+    background: rgb(63, 63, 250);
+}
+.div-item_2 {
+    background: green;
+}
+.ser_1, .ser_2, .ser_4, .ser_5 {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    width: 100%;
+    height: auto;
+    background: rgb(71, 70, 70);
+    transform: translate(-100%);
+    transition: all 0.3s linear;
+    margin-bottom: 50px;
+    z-index: 10;
+    overflow-y: auto;
+}
+.ser_1 p, .ser_2 p, .ser_3 p, .ser_4 p, .ser_5 p {
+    color: rgb(255, 255, 255);
+}
+.service_img {
+    position: relative;
+}
+.service_img img{
+    width: 100%;
+    height: auto;
+}
+.service_img span{
+    position: absolute; 
+    color: yellow;
+    background: black;
+    top: 80%; left: 10%; 
+    transform: translate(-50, -50); 
+    font-size: 1.6em;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img {
+    width: 100%;
+    height: calc(100vh - 50vh);
+}
+.img img{
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
 }
 .div1 ul{
     margin-left: 10px;
@@ -306,6 +390,10 @@ footer {
 .div1 ul li{
     padding: 1px;
     font-size: 19px;
+}
+.div1 h3{
+    margin-left: 20px;
+    color: rgb(5, 93, 93);
 }
 .why-gsss {
     width: 100%;
@@ -323,4 +411,20 @@ footer {
 .why-gsss ul li{
     padding: 1px;
     font-size: 19px;
+}
+
+.div-item {
+    width: 500px;
+    height: auto;
+    
+}
+.closeSer_1, .closeSer_2, .closeSer_4, .closeSer_5 {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: yellow;
+    font-size: 2em;
+    font-weight: bolder;
 }
