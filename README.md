@@ -37,7 +37,9 @@ This page contains all the needed informations about the company.
 <ul>
 <li>The comapny's start time and related</li>
 <li>About the company's staffs</li>
-<li>And other informations</li>
+<li>Key management Staff</li>
+<li>Top contacts of the company and the location</li>
+<li>Other key informations</li>
 </ul>
 
 <a href='abot.html'>Visit page</a>
@@ -46,19 +48,16 @@ This page contains all the needed informations about the company.
 
 This page contains all the latest job at the company and the online application form
 
+In addition, this page contains the selection procedure of the company and the requirements that an applicant must have to get accepted in the company.
+
+This page also has details of some training courses the given to the Staff.
+
 <a href='job.html'>Visit page</a>
 
-### Contact 
+### Services (services.html)
 
-This page contains all the company's contact informations and some reasons as to why users should contact the company
-
-<a href='contact.html'>Visit page</a>
-
-### Client 
-
-This page is for clients only, it has a form that the client will use to send feedback to the company.
-
-<a href='client.html'>Visit page</a>
+This page contains all the services the company offers. It is designed in a way that each division contains a unique service and onclick of it leads to the details \
+of the services.
 
 ***Project by Moses Oyet***
 <a href='mailto:trickmaxillar@gmail.com'>Send me mail</a>
