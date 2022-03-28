@@ -178,7 +178,7 @@
                     </p>
                 </div>
             </div>
-	    <a href="#top" style="margin-left: 10px; color: rgb(5, 93, 93)">Back to Top</a>
+	       <a href="#top" style="margin-left: 10px; color: rgb(5, 93, 93)">Back to Top</a>
         </section>
     </main>
     <!--footer-->
@@ -229,9 +229,16 @@
 
     burger.addEventListener('click', () => {
         sideMenu.style.transform = 'translate(0%)'
+        const bodyOverlay = document.createElement('div')
+        bodyOverlay.classList.add('overlay')
+        setTimeout(() => {
+            document.querySelector('body').append(bodyOverlay)
+        }, 300)
     })
     closeMenu.addEventListener('click', () => {
         sideMenu.style.transform = 'translate(-100%)'
+        const bodyOverlay = document.querySelector('.overlay')
+        document.querySelector('body').removeChild(bodyOverlay)
     })
 
     serviceDiv.addEventListener('click', () => {

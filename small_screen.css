@@ -7,6 +7,16 @@
     .header {
         height: 15vh;
     }
+    .search {
+        top: 11vh;
+        right: 20px;
+        width: 200px;
+        height: 20px;
+        transition: 0.3s;
+    }
+    .search span{
+        font-size: 1em;
+    }
     p {
         font-size: 1.1em;
     }
@@ -27,12 +37,22 @@
         font-size: 0.8em;
     }
     /*Designing home page */
+    /*design for lightbox*/
+    #d ul{
+        margin: 0;
+    }
+    #d h2{
+        margin: 2px auto;
+        text-align: center;
+    }
+    /*end*/
+    /*End*/
    
     .side-menubar {
         display: block;
         position: fixed;
         top: 0;
-        left: 10px;
+        left: 1px;
         transform: translate(-100%);
         z-index: 11;
         width: 50%;

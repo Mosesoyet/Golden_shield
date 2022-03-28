@@ -104,6 +104,54 @@ ul li{
 .active {
     background: rgb(246, 245, 243);
 }
+.search {
+    position: absolute;
+    bottom: 83vh;
+    right: 20px;
+    width: 250px;
+    height: 25px;
+    border: 1px solid rgb(5, 93, 93);
+    background: white;
+    transition: 0.3s;
+    display: inline-block;
+}
+.search span{
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(5, 93, 93);
+}
+.search-text {
+    width: 100%;
+    position: relative;
+    background: rgb(190, 189, 189);
+    display: none;
+    height: auto;
+    margin-top: 1px;
+    transition: 0.3s linear;
+    
+}
+.search-text h2 {
+    font-size: 1em;
+    color: rgb(160, 106, 26);
+    text-align: center;
+    text-decoration: underline;
+}
+.search-text ul li {
+    padding: 1px;
+    margin-top: 2px;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+.search-text ul li a{
+    color:  rgb(5, 93, 93);
+    font-size: 1.1em;
+}
+.search-text ul li a:hover{
+    color: black;
+}
+.search:hover > .search-text{
+    display: block;
+}
 
 .burger {
     display: none;
@@ -119,7 +167,41 @@ ul li{
     border-radius: 10px;
     margin-left: 10px;
 }
+/* Sample overlay */
+.overlay{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: #383736;
+    opacity: 0.7;
+    transition: all 0.3s linear;
+}
+.overl {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: #383736;
+    opacity: 0.7;
+    transition: all 0.3s linear;
+}
 
+/*End sample*/
+
+/* Designing home page / index.html*/
+.intro {
+    width: 100%;
+    height: calc(100vh - 20vh);
+    background: url('photo/trick.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 .page-title {
     display: flex;
     flex-direction: column;
@@ -149,8 +231,59 @@ ul li{
     font-size: 0.9em;
     font-weight: bolder;
 }
-/* Designing home page / index.html*/
 
+/* Design for lightbox*/
+.lb {
+    display: table; 
+    opacity: 0; 
+    z-index: -1; 
+    transition: 0.4s; 
+    position: fixed; top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100vh; 
+    background: rgba(0,0,0,7);
+}
+.lb:target {
+    opacity: 1;
+    z-index: 1;
+}
+.lb-con {
+    display: table-cell; 
+    vertical-align: top;
+}
+.close {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 1.5em; 
+    font-weight: 300; 
+    text-decoration: none; 
+    color: yellow;
+}
+.close:hover {
+    color: black;
+    opacity: 0.8;
+}
+#d {
+    background: rgb(116, 117, 116);
+}
+#d h2{
+    margin-left: 4em;
+    color: rgb(2, 34, 34);
+    margin-top: 20px;
+}
+#d ul{
+    margin-left: 5em;
+}
+#d ul li{
+    color: rgb(1, 1, 34);
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+/*End*/
 
 /* End home page design*/
 .side-menubar {
@@ -287,7 +420,7 @@ ul li{
     font-size: 1.1em;
 }
 
-.div-item_1:hover, .div-item_2:hover, .div-item_3:hover, .div-item_4:hover, .div-item_5:hover {
+.div-item_1:hover, .div-item_2:hover, .div-item_4:hover, .div-item_5:hover {
     width: 410px;
     height: 210px;
     cursor: pointer;
@@ -295,6 +428,15 @@ ul li{
     border: none;
     border-radius: 10px;
 }
+.div-item_3:hover {
+    width: 410px;
+    height: 210px;
+    cursor: default;
+    transition: 0.3s;
+    border: none;
+    border-radius: 10px;
+}
+
 
 .ser_1, .ser_2, .ser_4, .ser_5 {
     display: none;
