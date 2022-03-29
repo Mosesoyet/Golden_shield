@@ -200,7 +200,6 @@ ul li{
     background: url('photo/trick.jpg') no-repeat center center/cover;
     top: 0;
     left: 0;
-    z-index: -1;
 }
 .page-title {
     display: flex;
@@ -231,6 +230,7 @@ ul li{
     font-size: 0.9em;
     font-weight: bolder;
 }
+/* Annimation */
 
 /* Design for lightbox*/
 .lb {
